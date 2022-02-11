@@ -2,10 +2,16 @@
   "name": "100-plus-mbi-tim-sandberg",
   "version": "1.0.0",
   "description": "Take home challenge for 100Plus Engineering. Generate and verify MBI codes.",
-  "main": "server.js",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js"
+  },
   "author": "Tim Sandberg",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.2"
+    "bootstrap": "^5.1.3",
+    "express": "^4.17.2",
+    "sass": "^1.49.7"
   }
 }
