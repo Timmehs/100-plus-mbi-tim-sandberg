@@ -1,6 +1,6 @@
-import express from 'express'
-import validateMBI from './util/validate-mbi.js'
-import generateMBI from './util/generate-mbi.js'
+import express from "express"
+import validateMBI from "./util/validate-mbi.js"
+import generateMBI from "./util/generate-mbi.js"
 
 const PORT = process.env.PORT || 3001
 
