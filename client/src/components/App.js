@@ -38,7 +38,9 @@ function App() {
   }
 
   const handleTextChange = (e) => {
-    console.log("change")
+    if (e.target.value !== newMBI) {
+      setIsValid(null)
+    }
     setNewMBI(e.target.value)
   }
 

@@ -60,7 +60,6 @@ export default function Validator({
               Validate
             </button>
           </div>
-          <div className="col-12 mt-2" style={{ minHeight: "25px" }}></div>
         </div>
       </div>
     </div>
