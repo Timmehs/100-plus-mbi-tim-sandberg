@@ -18,8 +18,8 @@ export default function Validator({
   const validationIconClass = useMemo(() => {
     if (isValid !== null) {
       return isValid
-        ? "bi-check-circle text-success"
-        : "bi-x-circle text-danger"
+        ? "bi-check-circle-fill text-success"
+        : "bi-x-circle-fill text-danger"
     } else {
       return "d-none"
     }
@@ -31,7 +31,7 @@ export default function Validator({
         <div className="row">
           <div className="col">Validate an MBI</div>
           <div className="col d-flex justify-content-end">
-            <span className={`text-${isValid ? "success" : "danger"}`}>
+            <span className={`fw-bold text-${isValid ? "success" : "danger"}`}>
               {validationText}
               <i className={`bi ms-2 ${validationIconClass}`} />
             </span>
