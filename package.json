@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "type": "module",
   "scripts": {
-    "start": "node server/index.js & cd client && yarn start"
+    "start": "node server/index.js & cd client && yarn start",
+    "test": "jest"
   },
   "author": "Tim Sandberg",
   "license": "MIT",
@@ -16,6 +17,7 @@
     "sass": "^1.49.7"
   },
   "devDependencies": {
+    "jest": "^27.5.1",
     "prettier": "2.5.1"
   }
 }
