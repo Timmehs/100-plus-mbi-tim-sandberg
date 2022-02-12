@@ -2,6 +2,8 @@
 
 const regex = /^[1-9][A-Z][0-9|A-Z][0-9][A-Z][0-9|A-Z][0-9][A-Z]{2}[0-9]{2}$/
 
-export default function validateMBI(code) {
+function validateMBI(code) {
   return regex.test(code)
 }
+
+module.exports = validateMBI

@@ -1,4 +1,4 @@
-import validateMBI from "../server/util/validate-mbi"
+const validateMBI = require("../server/util/validate-mbi.js")
 
 const VALID_CODE = "1WM7Q31NI90"
 

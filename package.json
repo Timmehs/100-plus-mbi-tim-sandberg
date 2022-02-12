@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Take home challenge for 100Plus Engineering. Generate and verify MBI codes.",
   "main": "server/index.js",
-  "type": "module",
+  "engine": "v14.19.0",
   "scripts": {
     "start": "node server/index.js & cd client && yarn start",
-    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+    "build": "cd client && yarn install && yarn build",
+    "test": "jest"
   },
   "author": "Tim Sandberg",
   "license": "MIT",

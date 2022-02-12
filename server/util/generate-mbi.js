@@ -34,7 +34,7 @@ function randomAlpha() {
   return VALID_LETTERS[randomLetterIndex]
 }
 
-export default function generateMBI() {
+function generateMBI() {
   const c = () => randomInt(1, 9)
   const n = () => randomInt(0, 9)
   const an = () => (Math.random() < 0.5 ? randomInt(0, 9) : randomAlpha())
@@ -44,3 +44,5 @@ export default function generateMBI() {
 
   return mbi.map((f) => f()).join("")
 }
+
+module.exports = generateMBI

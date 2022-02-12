@@ -1,5 +1,5 @@
-import generateMBI from "../server/util/generate-mbi"
-import validateMBI from "../server/util/validate-mbi"
+const validateMBI = require("../server/util/validate-mbi.js")
+const generateMBI = require("../server/util/generate-mbi.js")
 
 describe("Generating MBI code", () => {
   it("generates a code 11 characters long", () => {
