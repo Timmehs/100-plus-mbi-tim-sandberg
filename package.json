@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server/index.js & cd client && yarn start",
-    "test": "jest"
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
   },
   "author": "Tim Sandberg",
   "license": "MIT",
