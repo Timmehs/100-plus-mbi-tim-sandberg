@@ -1,5 +1,7 @@
 # 100 Plus MBI Generator / Validator
 
+Live at: https://hello100plus.herokuapp.com/
+
 Features:
 
 - Generate valid Medicare Beneficiary Identifiers
@@ -9,5 +11,16 @@ Repository structure:
 
 - `server/`: Express API server and utilities
 - `client/`: React SPA application
-- `client/tests`: Component unit tests
-- `tests`: Node.js unit tests
+- `__tests__`: Node.js unit tests
+
+To run app locally:
+
+```sh
+yarn start
+```
+
+To run tests:
+
+```sh
+yarn test
+```
