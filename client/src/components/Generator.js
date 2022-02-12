@@ -7,7 +7,7 @@ export default function Generator({ getRandomMBI, randomMBI }) {
       <div className="card-header">Generate a random MBI</div>
       <div className="card-body py-4">
         <div className="row">
-          <div className="col-3">
+          <div className="col-4">
             <button
               className="btn btn-primary w-100 text-white"
               onClick={getRandomMBI}

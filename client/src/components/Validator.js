@@ -51,7 +51,7 @@ export default function Validator({
               />
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-4">
             <button
               className="btn btn-primary w-100 text-white"
               onClick={validateMBI}

@@ -29,7 +29,6 @@ function App() {
     axios
       .post("/verify", { mbi: newMBI })
       .then(({ data }) => {
-        console.log(data.isValid)
         setIsValid(data.isValid)
       })
       .catch((e) => {
@@ -62,6 +61,9 @@ function App() {
         </div>
         <div className="col-12">
           <Validator {...validatorProps} />
+        </div>
+        <div className="col-12 text-center">
+          <span className="text-muted">©2022 Tim Sandberg</span>
         </div>
       </div>
     </div>
