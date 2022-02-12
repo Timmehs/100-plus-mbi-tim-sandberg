@@ -18,6 +18,10 @@ app.post("/verify", (req, res) =>
   res.json({ isValid: validateMBI(req.body.mbi) })
 )
 
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../client/build", "index.html"))
+})
+
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`)
 })
